@@ -1,6 +1,0 @@
-//ignorar archivos para git
-
-.env
-
-node_modules
-
