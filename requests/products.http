@@ -1,0 +1,68 @@
+//entorno para probar URL 
+
+@api = http://localhost:3000/products
+
+###
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+//crear dato JSON
+//enviar datos la backend
+
+{
+         "marca": "HP",
+      "modelo": "OptiPlex 330",
+      "numeroserie": "5CG30381Y",
+      "ubicacion": "NA",
+      "usuarioRed": "YAAG003",
+      "estatus": "NA",
+      "sucursal": "NA",
+      "numeroActivoFijo": "NA",
+      "asignado": "NA",
+      "costo": "10000.00",
+      "ip": "192.168.40.22",
+      "macAddress": "02-50-41-00-00-04",
+      "SO": "WINDOWS 10 ENTREPRISE"
+}
+
+
+### busqueda por id
+GET {{api}}/1
+
+
+### borrar
+DELETE  {{api}}/3
+
+### total
+GET {{api}}/count
+
+### update
+PUT {{api}}/6
+Content-Type: application/json
+
+{
+         "marca": "HPPP",
+      "modelo": "OptiPlex 330",
+      "numeroserie": "5CG30381Y",
+      "ubicacion": "NA",
+      "usuarioRed": "YAAG003",
+      "estatus": "NA",
+      "sucursal": "NA",
+      "numeroActivoFijo": "NA",
+      "asignado": "NA",
+      "costo": "10000.00",
+      "ip": "192.168.40.22",
+      "macAddress": "02-50-41-00-00-04",
+      "SO": "WINDOWS 10 ENTREPRISE"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+      "username": "adm",
+      "password": "1234@"
+}
